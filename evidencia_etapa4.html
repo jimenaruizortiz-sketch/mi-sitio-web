@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mundo Inclusivo</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #fdf2f8, #f0fdfa);
+color:#222;
+font-size:18px;
+}
+
+/* HEADER */
+header{
+background: linear-gradient(to right, #0f766e, #14b8a6);
+padding:25px;
+text-align:center;
+color:white;
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* MENU HORIZONTAL */
+.menu-horizontal ul{
+list-style:none;
+}
+
+.menu-horizontal li{
+display:inline-block;
+margin:10px;
+}
+
+.menu-horizontal a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+padding:10px 18px;
+border:2px solid white;
+border-radius:12px;
+transition:0.3s;
+}
+
+.menu-horizontal a:hover{
+background:white;
+color:#0f766e;
+}
+
+/* CONTENEDOR */
+.contenedor{
+display:flex;
+margin:20px;
+gap:20px;
+}
+
+/* MENU VERTICAL */
+.menu-vertical{
+width:240px;
+background-color:#ccfbf1;
+padding:20px;
+border-radius:15px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-vertical h2{
+margin-bottom:15px;
+color:#115e59;
+}
+
+.menu-vertical ul{
+list-style:none;
+}
+
+.menu-vertical li{
+margin:15px 0;
+}
+
+.menu-vertical a{
+text-decoration:none;
+color:#134e4a;
+font-weight:bold;
+transition:0.3s;
+}
+
+.menu-vertical a:hover{
+color:#e11d48;
+}
+
+/* MAIN */
+main{
+flex:1;
+}
+
+/* CAJAS */
+.caja{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:18px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.caja:hover{
+transform:scale(1.01);
+}
+
+.caja h2{
+margin-bottom:15px;
+color:#0f766e;
+}
+
+/* IMAGEN */
+img{
+width:100%;
+max-width:500px;
+margin-top:15px;
+border-radius:15px;
+}
+
+/* VIDEO */
+video{
+width:100%;
+max-width:500px;
+margin-top:15px;
+border-radius:15px;
+}
+
+/* TABLA */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th, td{
+border:2px solid #14b8a6;
+padding:12px;
+text-align:center;
+}
+
+th{
+background:#14b8a6;
+color:white;
+}
+
+tr:hover{
+background:#ccfbf1;
+}
+
+/* LISTA */
+.lista li{
+margin:12px 0;
+}
+
+.lista li::before{
+content:"🌟 ";
+}
+
+/* FOOTER */
+footer{
+background:#134e4a;
+color:white;
+text-align:center;
+padding:18px;
+margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.contenedor{
+flex-direction:column;
+}
+
+.menu-vertical{
+width:100%;
+}
+
+.menu-horizontal li{
+display:block;
+margin:12px 0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<h1>🌍 Mundo Inclusivo</h1>
+
+<p>
+Construyendo una sociedad con respeto, igualdad y oportunidades para todos.
+</p>
+
+<nav class="menu-horizontal">
+
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#importancia">Importancia</a></li>
+<li><a href="#beneficios">Beneficios</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<div class="contenedor">
+
+<!-- MENU VERTICAL -->
+<aside class="menu-vertical">
+
+<h2>Temas principales</h2>
+
+<ul>
+<li><a href="#">Diversidad cultural</a></li>
+<li><a href="#">Inclusión educativa</a></li>
+<li><a href="#">Accesibilidad</a></li>
+<li><a href="#">Respeto social</a></li>
+<li><a href="#">Empatía</a></li>
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+<main>
+
+<!-- INICIO -->
+<section id="inicio" class="caja">
+
+<h2>¿Qué es la inclusión?</h2>
+
+<p>
+La inclusión es un proceso que busca garantizar que todas las personas,
+sin importar sus capacidades, origen, género o situación social,
+puedan participar de manera equitativa en la sociedad.
+</p>
+
+<p>
+Una comunidad inclusiva promueve el respeto, la igualdad y la empatía,
+permitiendo que cada individuo tenga las mismas oportunidades de desarrollo.
+</p>
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" alt="Inclusión social">
+
+</section>
+
+<!-- IMPORTANCIA -->
+<section id="importancia" class="caja">
+
+<h2>¿Por qué es importante?</h2>
+
+<ul class="lista">
+<li>Promueve el respeto entre las personas</li>
+<li>Reduce la discriminación</li>
+<li>Mejora la convivencia social</li>
+<li>Ayuda al desarrollo emocional</li>
+<li>Fortalece la igualdad de oportunidades</li>
+</ul>
+
+</section>
+
+<!-- VIDEO -->
+<section class="caja">
+
+<h2>Video informativo</h2>
+
+<p>
+La inclusión ayuda a crear ambientes más seguros,
+justos y accesibles para todos.
+</p>
+
+<video controls>
+<source src="YN.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- TABLA -->
+<section id="beneficios" class="caja">
+
+<h2>Beneficios de la inclusión</h2>
+
+<table>
+
+<tr>
+<th>Área</th>
+<th>Beneficio</th>
+</tr>
+
+<tr>
+<td>Educación</td>
+<td>Mayor participación y aprendizaje</td>
+</tr>
+
+<tr>
+<td>Trabajo</td>
+<td>Ambientes más respetuosos y colaborativos</td>
+</tr>
+
+<tr>
+<td>Sociedad</td>
+<td>Convivencia sana y diversidad cultural</td>
+</tr>
+
+<tr>
+<td>Familia</td>
+<td>Mejor comunicación y empatía</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="caja">
+
+<h2>Contacto</h2>
+
+<p><strong>Email:</strong> mundoinclusivo@email.com</p>
+
+<p><strong>Teléfono:</strong> 81 0000 0000</p>
+
+<p>
+Trabajemos juntos para crear un entorno más inclusivo y respetuoso.
+</p>
+
+</section>
+
+</main>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+© 2026 Mundo Inclusivo | Página educativa sobre inclusión social
+</p>
+
+</footer>
+
+</body>
+</html>
